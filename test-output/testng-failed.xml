@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="automation.tests.Weather_Verification_Test">
+        <methods>
+          <include name="Test04_Verify_City_Weather_Information_Displayed_In_Map"/>
+          <include name="Test03_enter_City_And_Verify_City_Is_Displayed_In_Map"/>
+          <include name="stop_test_session"/>
+          <include name="start_test_session"/>
+        </methods>
+      </class> <!-- automation.tests.Weather_Verification_Test -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

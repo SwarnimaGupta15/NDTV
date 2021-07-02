@@ -1,0 +1,7 @@
+base_url:  https://www.ndtv.com
+title:
+   homePage: Get Latest News
+   weatherPage: NDTV Weather
+city: Ajmer
+cityWeatherKeys: Wind,Condition,Humidity,Temp in Degrees,Temp in Fahrenheit
+
