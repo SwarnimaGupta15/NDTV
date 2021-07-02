@@ -1,10 +1,8 @@
 package automation.keywords;
 
 import static automation.utils.YamlReader.getData;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-
 import automation.base.GetPage;
 
 

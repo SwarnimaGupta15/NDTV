@@ -64,7 +64,7 @@ public class WeatherPage extends GetPage {
 			expected.add(a);
 		SoftAssert sa=new SoftAssert();
 		sa.assertEquals(cityInfo.keySet().toString(), expected,"[ASSERT FAILED]: Fields in city weather information is incorrect"
-				+ "Found: "+cityInfo.keySet().toString()+" Expected: "+expected);
+				+ " Found: "+cityInfo.keySet().toString()+" Expected: "+expected);
 		sa.assertNotNull(cityInfo.get("Temp in Degrees"),"[ASSERT FAILED]: Temperature in degrees value is empty");
 		sa.assertNotNull(cityInfo.get("Temp in Fahrenheit"),"[ASSERT FAILED]: Temperature in fahrenheit value is empty");
 		sa.assertAll();

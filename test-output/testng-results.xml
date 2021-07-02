@@ -20,12 +20,12 @@
       <![CDATA[[ASSERT FAILED]: Element mapCity not found on the WeatherPage !!!]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24033" started-at="2021-07-02T12:05:04Z" finished-at="2021-07-02T12:05:28Z">
+  <suite name="Default suite" duration-ms="56177" started-at="2021-07-02T18:29:51Z" finished-at="2021-07-02T18:30:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24033" started-at="2021-07-02T12:05:04Z" finished-at="2021-07-02T12:05:28Z">
+    <test name="Default test" duration-ms="56177" started-at="2021-07-02T18:29:51Z" finished-at="2021-07-02T18:30:47Z">
       <class name="automation.tests.Weather_Verification_Test">
-        <test-method status="PASS" signature="start_test_session(java.lang.String)[pri:0, instance:automation.tests.Weather_Verification_Test@91161c7]" name="start_test_session" is-config="true" duration-ms="4173" started-at="2021-07-02T12:05:04Z" finished-at="2021-07-02T12:05:08Z">
+        <test-method status="PASS" signature="start_test_session(java.lang.String)[pri:0, instance:automation.tests.Weather_Verification_Test@464bee09]" name="start_test_session" is-config="true" duration-ms="4727" started-at="2021-07-02T18:29:51Z" finished-at="2021-07-02T18:29:56Z">
           <params>
             <param index="0">
               <value>
@@ -36,7 +36,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start_test_session -->
-        <test-method status="PASS" signature="Test01_Launch_Application_And_Verify_User_Navigation_To_HomePage()[pri:0, instance:automation.tests.Weather_Verification_Test@91161c7]" name="Test01_Launch_Application_And_Verify_User_Navigation_To_HomePage" duration-ms="14295" started-at="2021-07-02T12:05:08Z" finished-at="2021-07-02T12:05:23Z">
+        <test-method status="PASS" signature="Test01_Launch_Application_And_Verify_User_Navigation_To_HomePage()[pri:0, instance:automation.tests.Weather_Verification_Test@464bee09]" name="Test01_Launch_Application_And_Verify_User_Navigation_To_HomePage" duration-ms="47632" started-at="2021-07-02T18:29:56Z" finished-at="2021-07-02T18:30:44Z">
           <reporter-output>
             <line>
               <![CDATA[[INFO]: Title Found: Get Latest News, India News, Breaking News, Today's News - NDTV.com]]>
@@ -46,7 +46,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test01_Launch_Application_And_Verify_User_Navigation_To_HomePage -->
-        <test-method status="PASS" signature="Test02_Click_On_Weather_Tab_And_Verify_User_Navigates_To_Weather_Page()[pri:0, instance:automation.tests.Weather_Verification_Test@91161c7]" name="Test02_Click_On_Weather_Tab_And_Verify_User_Navigates_To_Weather_Page" duration-ms="3622" started-at="2021-07-02T12:05:23Z" finished-at="2021-07-02T12:05:26Z">
+        <test-method status="PASS" signature="Test02_Click_On_Weather_Tab_And_Verify_User_Navigates_To_Weather_Page()[pri:0, instance:automation.tests.Weather_Verification_Test@464bee09]" name="Test02_Click_On_Weather_Tab_And_Verify_User_Navigates_To_Weather_Page" duration-ms="1677" started-at="2021-07-02T18:30:44Z" finished-at="2021-07-02T18:30:45Z">
           <reporter-output>
             <line>
               <![CDATA[[INFO]: Title Found: NDTV Weather - Weather in your Indian City]]>
@@ -56,7 +56,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Test02_Click_On_Weather_Tab_And_Verify_User_Navigates_To_Weather_Page -->
-        <test-method status="FAIL" signature="Test03_enter_City_And_Verify_City_Is_Displayed_In_Map()[pri:0, instance:automation.tests.Weather_Verification_Test@91161c7]" name="Test03_enter_City_And_Verify_City_Is_Displayed_In_Map" duration-ms="391" started-at="2021-07-02T12:05:26Z" finished-at="2021-07-02T12:05:27Z">
+        <test-method status="FAIL" signature="Test03_enter_City_And_Verify_City_Is_Displayed_In_Map()[pri:0, instance:automation.tests.Weather_Verification_Test@464bee09]" name="Test03_enter_City_And_Verify_City_Is_Displayed_In_Map" duration-ms="579" started-at="2021-07-02T18:30:45Z" finished-at="2021-07-02T18:30:46Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[[ASSERT FAILED]: Element cityCheckbox not found on the WeatherPage !!!]]>
@@ -102,7 +102,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- Test03_enter_City_And_Verify_City_Is_Displayed_In_Map -->
-        <test-method status="FAIL" signature="Test04_Verify_City_Weather_Information_Displayed_In_Map()[pri:0, instance:automation.tests.Weather_Verification_Test@91161c7]" name="Test04_Verify_City_Weather_Information_Displayed_In_Map" duration-ms="49" started-at="2021-07-02T12:05:27Z" finished-at="2021-07-02T12:05:27Z">
+        <test-method status="FAIL" signature="Test04_Verify_City_Weather_Information_Displayed_In_Map()[pri:0, instance:automation.tests.Weather_Verification_Test@464bee09]" name="Test04_Verify_City_Weather_Information_Displayed_In_Map" duration-ms="52" started-at="2021-07-02T18:30:46Z" finished-at="2021-07-02T18:30:46Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[[ASSERT FAILED]: Element mapCity not found on the WeatherPage !!!]]>
@@ -147,7 +147,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- Test04_Verify_City_Weather_Information_Displayed_In_Map -->
-        <test-method status="PASS" signature="stop_test_session()[pri:0, instance:automation.tests.Weather_Verification_Test@91161c7]" name="stop_test_session" is-config="true" duration-ms="1463" started-at="2021-07-02T12:05:27Z" finished-at="2021-07-02T12:05:28Z">
+        <test-method status="PASS" signature="stop_test_session()[pri:0, instance:automation.tests.Weather_Verification_Test@464bee09]" name="stop_test_session" is-config="true" duration-ms="1470" started-at="2021-07-02T18:30:46Z" finished-at="2021-07-02T18:30:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop_test_session -->

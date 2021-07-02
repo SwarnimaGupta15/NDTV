@@ -5,7 +5,6 @@ import static automation.utils.ConfigPropertyReader.getProperty;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
 
 import automation.utils.SeleniumWait;
@@ -21,7 +20,7 @@ public class BaseUI {
 		this.wait = new SeleniumWait(driver, Integer.parseInt(getProperty("timeout")));
 	}
 
-	protected String logMessage(String message) {
+	public static String logMessage(String message) {
 		Reporter.log(message, true);
 		return message;
 	}
@@ -38,7 +37,6 @@ public class BaseUI {
 		try {
 			wait.waitForAlertToBePresent().accept();
 			logMessage("Alert handled..");
-			//driver.switchTo().defaultContent();
 		} catch (Exception e) {
 			System.out.println("No Alert window appeared...");
 		}
@@ -50,8 +48,7 @@ public class BaseUI {
 	}
 
 	public void clickByJavascript(WebElement element) {
-		wait.waitForElementToBeVisible(element);
-		
+		wait.waitForElementToBeVisible(element);		
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
 	}
 	

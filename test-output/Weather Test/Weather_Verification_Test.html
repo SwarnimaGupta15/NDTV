@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Weather_Verification_Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 01 23:40:14 IST 2021</td>
+<td>Started on:</td><td>Fri Jul 02 23:56:27 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18567 ms)</td>
+<tr><td>Total time:</td><td>26 seconds (26035 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,50 +76,98 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='automation.tests.Weather_Verification_Test.Test03_enter_City_And_Verify_City_Is_Displayed_In_Map()'><b>Test03_enter_City_And_Verify_City_Is_Displayed_In_Map</b><br>Test class: automation.tests.Weather_Verification_Test<br/>
-<a href="#Output-1582275736" onClick='toggleBox("Output-1582275736", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-94294992" onClick='toggleBox("Output-94294992", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1582275736" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1582275736">
-[ASSERT FAILED]: Element pinCityField not found on the WeatherPage !!!<br/>
+<a href="#Output-94294992" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-94294992">
+[ASSERT FAILED]: Element cityCheckbox not found on the WeatherPage !!!<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: [ASSERT FAILED]: Element pinCityField not found on the WeatherPage !!!
-	at automation.base.GetPage.element(GetPage.java:34)
-	at automation.keywords.WeatherPage.enterCityInPinYourCityTextField(WeatherPage.java:26)
-	at automation.tests.Weather_Verification_Test.Test03_enter_City_And_Verify_City_Is_Displayed_In_Map(Weather_Verification_Test.java:36)
+<td><div><pre>java.lang.AssertionError: [ASSERT FAILED]: Element cityCheckbox not found on the WeatherPage !!!
+	at automation.base.GetPage.elemconstructed_dynamically(GetPage.java:58)
+	at automation.keywords.WeatherPage.selectCheckboxForCityIfNotSelected(WeatherPage.java:39)
+	at automation.keywords.WeatherPage.enterCityInPinYourCityTextFieldAndSelect(WeatherPage.java:35)
+	at automation.tests.Weather_Verification_Test.Test03_enter_City_And_Verify_City_Is_Displayed_In_Map(Weather_Verification_Test.java:38)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1582275736", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1582275736'><pre>java.lang.AssertionError: [ASSERT FAILED]: Element pinCityField not found on the WeatherPage !!!
-	at org.testng.Assert.fail(Assert.java:94)
-	at automation.base.GetPage.element(GetPage.java:34)
-	at automation.keywords.WeatherPage.enterCityInPinYourCityTextField(WeatherPage.java:26)
-	at automation.tests.Weather_Verification_Test.Test03_enter_City_And_Verify_City_Is_Displayed_In_Map(Weather_Verification_Test.java:36)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace94294992", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace94294992'><pre>java.lang.AssertionError: [ASSERT FAILED]: Element cityCheckbox not found on the WeatherPage !!!
+	at org.testng.Assert.fail(Assert.java:96)
+	at automation.base.GetPage.elemconstructed_dynamically(GetPage.java:58)
+	at automation.keywords.WeatherPage.selectCheckboxForCityIfNotSelected(WeatherPage.java:39)
+	at automation.keywords.WeatherPage.enterCityInPinYourCityTextFieldAndSelect(WeatherPage.java:35)
+	at automation.tests.Weather_Verification_Test.Test03_enter_City_And_Verify_City_Is_Displayed_In_Map(Weather_Verification_Test.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
 <td>0</td>
-<td>automation.tests.Weather_Verification_Test@148080bb</td></tr>
+<td>automation.tests.Weather_Verification_Test@31ef45e3</td></tr>
+<tr>
+<td title='automation.tests.Weather_Verification_Test.Test04_Verify_City_Weather_Information_Displayed_In_Map()'><b>Test04_Verify_City_Weather_Information_Displayed_In_Map</b><br>Test class: automation.tests.Weather_Verification_Test<br/>
+<a href="#Output-1344306085" onClick='toggleBox("Output-1344306085", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1344306085" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1344306085">
+[ASSERT FAILED]: Element mapCity not found on the WeatherPage !!!<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: [ASSERT FAILED]: Element mapCity not found on the WeatherPage !!!
+	at automation.base.GetPage.elemconstructed_dynamically(GetPage.java:58)
+	at automation.keywords.WeatherPage.storeCityWeatherInformation(WeatherPage.java:51)
+	at automation.tests.Weather_Verification_Test.Test04_Verify_City_Weather_Information_Displayed_In_Map(Weather_Verification_Test.java:44)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1344306085", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1344306085'><pre>java.lang.AssertionError: [ASSERT FAILED]: Element mapCity not found on the WeatherPage !!!
+	at org.testng.Assert.fail(Assert.java:96)
+	at automation.base.GetPage.elemconstructed_dynamically(GetPage.java:58)
+	at automation.keywords.WeatherPage.storeCityWeatherInformation(WeatherPage.java:51)
+	at automation.tests.Weather_Verification_Test.Test04_Verify_City_Weather_Information_Displayed_In_Map(Weather_Verification_Test.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>automation.tests.Weather_Verification_Test@31ef45e3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -129,31 +177,84 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='automation.tests.Weather_Verification_Compare_Data_Test.Test01_Compare_Temperature_Data_From_UI_And_API()'><b>Test01_Compare_Temperature_Data_From_UI_And_API</b><br>Test class: automation.tests.Weather_Verification_Compare_Data_Test</td>
+<td></td>
+<td>0</td>
+<td>automation.tests.Weather_Verification_Compare_Data_Test@598067a5</td></tr>
+<tr>
 <td title='automation.tests.Weather_Verification_Test.Test01_Launch_Application_And_Verify_User_Navigation_To_HomePage()'><b>Test01_Launch_Application_And_Verify_User_Navigation_To_HomePage</b><br>Test class: automation.tests.Weather_Verification_Test<br/>
-<a href="#Output-1027529096" onClick='toggleBox("Output-1027529096", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-751783973" onClick='toggleBox("Output-751783973", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1027529096" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1027529096">
+<a href="#Output-751783973" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-751783973">
 [INFO]: Title Found: Get Latest News, India News, Breaking News, Today's News - NDTV.com<br/>
 [ASSERT PASSED]: Page title found on Home page is correct.<br/>
 </div>
 </td>
 <td></td>
-<td>12</td>
-<td>automation.tests.Weather_Verification_Test@148080bb</td></tr>
+<td>10</td>
+<td>automation.tests.Weather_Verification_Test@31ef45e3</td></tr>
+<tr>
+<td title='automation.tests.Weather_Verification_API_Test.Test01_verify_Access_To_Weather_API_For_invalid_CityName_Input_And_Check_Response_Status_Code()'><b>Test01_verify_Access_To_Weather_API_For_invalid_CityName_Input_And_Check_Response_Status_Code</b><br>Test class: automation.tests.Weather_Verification_API_Test<br/>
+<a href="#Output-1197683498" onClick='toggleBox("Output-1197683498", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1197683498" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1197683498">
+[ASSERT PASSED]: 404 Status Code returned on accessing weather API for city Mumb<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>automation.tests.Weather_Verification_API_Test@57fffcd7</td></tr>
 <tr>
 <td title='automation.tests.Weather_Verification_Test.Test02_Click_On_Weather_Tab_And_Verify_User_Navigates_To_Weather_Page()'><b>Test02_Click_On_Weather_Tab_And_Verify_User_Navigates_To_Weather_Page</b><br>Test class: automation.tests.Weather_Verification_Test<br/>
-<a href="#Output-934103541" onClick='toggleBox("Output-934103541", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1172224418" onClick='toggleBox("Output-1172224418", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-934103541" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-934103541">
+<a href="#Output-1172224418" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1172224418">
 [INFO]: Title Found: NDTV Weather - Weather in your Indian City<br/>
 [ASSERT PASSED]: Page title found on Weather page is correct.<br/>
 </div>
 </td>
 <td></td>
+<td>5</td>
+<td>automation.tests.Weather_Verification_Test@31ef45e3</td></tr>
+<tr>
+<td title='automation.tests.Weather_Verification_API_Test.Test02_verify_Access_To_Weather_API_And_Check_Response_Status_Code()'><b>Test02_verify_Access_To_Weather_API_And_Check_Response_Status_Code</b><br>Test class: automation.tests.Weather_Verification_API_Test<br/>
+<a href="#Output-274548441" onClick='toggleBox("Output-274548441", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-274548441" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-274548441">
+[ASSERT PASSED]: 200 Status Code returned on accessing weather API for city Ajmer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>automation.tests.Weather_Verification_API_Test@57fffcd7</td></tr>
+<tr>
+<td title='automation.tests.Weather_Verification_API_Test.Test03_verify_Weather_Condition_In_WeatherAPI_Response()'><b>Test03_verify_Weather_Condition_In_WeatherAPI_Response</b><br>Test class: automation.tests.Weather_Verification_API_Test<br/>
+<a href="#Output-1979670423" onClick='toggleBox("Output-1979670423", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1979670423" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1979670423">
+[ASSERT PASSED]: Weather condition returned through weather API for city Ajmer is [Clouds]<br/>
+</div>
+</td>
+<td></td>
 <td>1</td>
-<td>automation.tests.Weather_Verification_Test@148080bb</td></tr>
+<td>automation.tests.Weather_Verification_API_Test@57fffcd7</td></tr>
+<tr>
+<td title='automation.tests.Weather_Verification_API_Test.Test04_verify_Weather_Temperature_In_WeatherAPI_Response()'><b>Test04_verify_Weather_Temperature_In_WeatherAPI_Response</b><br>Test class: automation.tests.Weather_Verification_API_Test<br/>
+<a href="#Output-1967502923" onClick='toggleBox("Output-1967502923", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1967502923" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1967502923">
+[ASSERT PASSED]: Weather condition returned through weather API for city Ajmer is [temp:304.82, temp_min:304.82, grnd_level:948, humidity:45, pressure:1001, sea_level:1001, feels_like:305.87, temp_max:304.82]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>automation.tests.Weather_Verification_API_Test@57fffcd7</td></tr>
 </table><p>
 </body>
 </html>

@@ -8,7 +8,9 @@
 		enabled="true">
 		<parameter name="browser" value="chrome" />
 		<classes>
+		   <class name="automation.tests.Weather_Verification_API_Test"></class>
 			<class name="automation.tests.Weather_Verification_Test"></class>
+			<class name="automation.tests.Weather_Verification_Compare_Data_Test"></class>
 		</classes>
 	</test>
 	

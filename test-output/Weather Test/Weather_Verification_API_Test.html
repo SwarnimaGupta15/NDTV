@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>TestNG:  Weather_Verification_API_Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Weather_Verification_API_Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jul 02 23:46:57 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>5 seconds (5277 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automation.tests.Weather_Verification_API_Test.Test01_verify_Access_To_Weather_API_For_invalid_CityName_Input_And_Check_Response_Status_Code()'><b>Test01_verify_Access_To_Weather_API_For_invalid_CityName_Input_And_Check_Response_Status_Code</b><br>Test class: automation.tests.Weather_Verification_API_Test<br/>
+<a href="#Output-1367270039" onClick='toggleBox("Output-1367270039", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1367270039" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1367270039">
+[ASSERT PASSED]: 404 Status Code returned on accessing weather API for city Mumb<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>automation.tests.Weather_Verification_API_Test@6adede5</td></tr>
+<tr>
+<td title='automation.tests.Weather_Verification_API_Test.Test02_verify_Access_To_Weather_API_And_Check_Response_Status_Code()'><b>Test02_verify_Access_To_Weather_API_And_Check_Response_Status_Code</b><br>Test class: automation.tests.Weather_Verification_API_Test<br/>
+<a href="#Output-357269845" onClick='toggleBox("Output-357269845", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-357269845" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-357269845">
+[ASSERT PASSED]: 200 Status Code returned on accessing weather API for city Ajmer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>automation.tests.Weather_Verification_API_Test@6adede5</td></tr>
+<tr>
+<td title='automation.tests.Weather_Verification_API_Test.Test03_verify_Weather_Condition_In_WeatherAPI_Response()'><b>Test03_verify_Weather_Condition_In_WeatherAPI_Response</b><br>Test class: automation.tests.Weather_Verification_API_Test<br/>
+<a href="#Output-1180812580" onClick='toggleBox("Output-1180812580", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1180812580" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1180812580">
+[ASSERT PASSED]: Weather condition returned through weather API for city Ajmer is [Clouds]<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>automation.tests.Weather_Verification_API_Test@6adede5</td></tr>
+<tr>
+<td title='automation.tests.Weather_Verification_API_Test.Test04_verify_Weather_Temperature_In_WeatherAPI_Response()'><b>Test04_verify_Weather_Temperature_In_WeatherAPI_Response</b><br>Test class: automation.tests.Weather_Verification_API_Test<br/>
+<a href="#Output-2124893813" onClick='toggleBox("Output-2124893813", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2124893813" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2124893813">
+[ASSERT PASSED]: Weather condition returned through weather API for city Ajmer is [temp:304.82, temp_min:304.82, grnd_level:948, humidity:45, pressure:1001, sea_level:1001, feels_like:305.87, temp_max:304.82]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>automation.tests.Weather_Verification_API_Test@6adede5</td></tr>
+</table><p>
+</body>
+</html>
