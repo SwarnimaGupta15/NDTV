@@ -13,6 +13,18 @@
           <include name="start_test_session"/>
         </methods>
       </class> <!-- automation.tests.Weather_Verification_Test -->
+      <class name="automation.tests.Weather_Verification_Compare_Data_Test">
+        <methods>
+          <include name="start_test_session"/>
+          <include name="Test01_Compare_Weather_Condition_Data_From_UI_And_API"/>
+        </methods>
+      </class> <!-- automation.tests.Weather_Verification_Compare_Data_Test -->
+      <class name="automation.tests.Weather_Verification_API_Test">
+        <methods>
+          <include name="Test04_verify_Weather_Temperature_In_WeatherAPI_Response"/>
+          <include name="start_Service_Test"/>
+        </methods>
+      </class> <!-- automation.tests.Weather_Verification_API_Test -->
     </classes>
   </test> <!-- Weather_Verification_Test(failed) -->
 </suite> <!-- Failed suite [Weather Test] -->

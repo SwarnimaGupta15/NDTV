@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Weather Test" parallel="tests"
-	thread-count="5">
-	<parameter name="browser" value="firefox" />
+<suite verbose="0" name="Weather Test" parallel="tests"	thread-count="5">
+	
 
-	<test name="Weather_Verification_Test" preserve-order="true"
-		enabled="true">
+	<test name="Weather_Verification_Test" preserve-order="true" enabled="true">
 		<parameter name="browser" value="chrome" />
 		<classes>
 		   <class name="automation.tests.Weather_Verification_API_Test"></class>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jul 02 23:59:51 IST 2021</td>
+<td>Started on:</td><td>Sat Jul 03 22:33:51 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>56 seconds (56177 ms)</td>
+<tr><td>Total time:</td><td>23 seconds (23176 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,162 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='automation.tests.Weather_Verification_Test.Test03_enter_City_And_Verify_City_Is_Displayed_In_Map()'><b>Test03_enter_City_And_Verify_City_Is_Displayed_In_Map</b><br>Test class: automation.tests.Weather_Verification_Test<br/>
-<a href="#Output-1831882653" onClick='toggleBox("Output-1831882653", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1831882653" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1831882653">
-[ASSERT FAILED]: Element cityCheckbox not found on the WeatherPage !!!<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: [ASSERT FAILED]: Element cityCheckbox not found on the WeatherPage !!!
-	at org.testng.Assert.fail(Assert.java:96)
-	at automation.base.GetPage.elemconstructed_dynamically(GetPage.java:58)
-	at automation.keywords.WeatherPage.selectCheckboxForCityIfNotSelected(WeatherPage.java:39)
-	at automation.keywords.WeatherPage.enterCityInPinYourCityTextFieldAndSelect(WeatherPage.java:35)
-	at automation.tests.Weather_Verification_Test.Test03_enter_City_And_Verify_City_Is_Displayed_In_Map(Weather_Verification_Test.java:38)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1831882653", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1831882653'><pre>java.lang.AssertionError: [ASSERT FAILED]: Element cityCheckbox not found on the WeatherPage !!!
-	at org.testng.Assert.fail(Assert.java:96)
-	at automation.base.GetPage.elemconstructed_dynamically(GetPage.java:58)
-	at automation.keywords.WeatherPage.selectCheckboxForCityIfNotSelected(WeatherPage.java:39)
-	at automation.keywords.WeatherPage.enterCityInPinYourCityTextFieldAndSelect(WeatherPage.java:35)
-	at automation.tests.Weather_Verification_Test.Test03_enter_City_And_Verify_City_Is_Displayed_In_Map(Weather_Verification_Test.java:38)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>automation.tests.Weather_Verification_Test@464bee09</td></tr>
-<tr>
-<td title='automation.tests.Weather_Verification_Test.Test04_Verify_City_Weather_Information_Displayed_In_Map()'><b>Test04_Verify_City_Weather_Information_Displayed_In_Map</b><br>Test class: automation.tests.Weather_Verification_Test<br/>
-<a href="#Output-435914790" onClick='toggleBox("Output-435914790", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-435914790" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-435914790">
-[ASSERT FAILED]: Element mapCity not found on the WeatherPage !!!<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: [ASSERT FAILED]: Element mapCity not found on the WeatherPage !!!
-	at org.testng.Assert.fail(Assert.java:96)
-	at automation.base.GetPage.elemconstructed_dynamically(GetPage.java:58)
-	at automation.keywords.WeatherPage.storeCityWeatherInformation(WeatherPage.java:51)
-	at automation.tests.Weather_Verification_Test.Test04_Verify_City_Weather_Information_Displayed_In_Map(Weather_Verification_Test.java:44)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace435914790", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace435914790'><pre>java.lang.AssertionError: [ASSERT FAILED]: Element mapCity not found on the WeatherPage !!!
-	at org.testng.Assert.fail(Assert.java:96)
-	at automation.base.GetPage.elemconstructed_dynamically(GetPage.java:58)
-	at automation.keywords.WeatherPage.storeCityWeatherInformation(WeatherPage.java:51)
-	at automation.tests.Weather_Verification_Test.Test04_Verify_City_Weather_Information_Displayed_In_Map(Weather_Verification_Test.java:44)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>automation.tests.Weather_Verification_Test@464bee09</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -232,30 +76,54 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='automation.tests.Weather_Verification_Test.Test01_Launch_Application_And_Verify_User_Navigation_To_HomePage()'><b>Test01_Launch_Application_And_Verify_User_Navigation_To_HomePage</b><br>Test class: automation.tests.Weather_Verification_Test<br/>
-<a href="#Output-746280996" onClick='toggleBox("Output-746280996", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1479140596" onClick='toggleBox("Output-1479140596", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-746280996" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-746280996">
+<a href="#Output-1479140596" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1479140596">
 [INFO]: Title Found: Get Latest News, India News, Breaking News, Today's News - NDTV.com<br/>
 [ASSERT PASSED]: Page title found on Home page is correct.<br/>
 </div>
 </td>
 <td></td>
-<td>47</td>
-<td>automation.tests.Weather_Verification_Test@464bee09</td></tr>
+<td>12</td>
+<td>automation.tests.Weather_Verification_Test@3abbfa04</td></tr>
 <tr>
 <td title='automation.tests.Weather_Verification_Test.Test02_Click_On_Weather_Tab_And_Verify_User_Navigates_To_Weather_Page()'><b>Test02_Click_On_Weather_Tab_And_Verify_User_Navigates_To_Weather_Page</b><br>Test class: automation.tests.Weather_Verification_Test<br/>
-<a href="#Output-2095677157" onClick='toggleBox("Output-2095677157", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-79161706" onClick='toggleBox("Output-79161706", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2095677157" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2095677157">
+<a href="#Output-79161706" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-79161706">
 [INFO]: Title Found: NDTV Weather - Weather in your Indian City<br/>
 [ASSERT PASSED]: Page title found on Weather page is correct.<br/>
 </div>
 </td>
 <td></td>
-<td>1</td>
-<td>automation.tests.Weather_Verification_Test@464bee09</td></tr>
+<td>3</td>
+<td>automation.tests.Weather_Verification_Test@3abbfa04</td></tr>
+<tr>
+<td title='automation.tests.Weather_Verification_Test.Test03_enter_City_And_Verify_City_Is_Displayed_In_Map()'><b>Test03_enter_City_And_Verify_City_Is_Displayed_In_Map</b><br>Test class: automation.tests.Weather_Verification_Test<br/>
+<a href="#Output-34073107" onClick='toggleBox("Output-34073107", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-34073107" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-34073107">
+[ASSERT PASSED]: Selected city is displayed on map<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>automation.tests.Weather_Verification_Test@3abbfa04</td></tr>
+<tr>
+<td title='automation.tests.Weather_Verification_Test.Test04_Verify_City_Weather_Information_Displayed_In_Map()'><b>Test04_Verify_City_Weather_Information_Displayed_In_Map</b><br>Test class: automation.tests.Weather_Verification_Test<br/>
+<a href="#Output-1115013644" onClick='toggleBox("Output-1115013644", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1115013644" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1115013644">
+[ASSERT PASSED]: Fields in city weather information is correct and temperature is displayed appropriately for city: Ajmer<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>automation.tests.Weather_Verification_Test@3abbfa04</td></tr>
 </table><p>
 </body>
 </html>

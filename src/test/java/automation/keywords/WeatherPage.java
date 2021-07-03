@@ -1,5 +1,6 @@
 package automation.keywords;
 
+import static automation.utils.PropFileHandler.properties;
 import static automation.utils.YamlReader.getData;
 
 import java.util.ArrayList;
@@ -15,7 +16,8 @@ import org.testng.asserts.SoftAssert;
 import automation.base.GetPage;
 
 public class WeatherPage extends GetPage {
-	public HashMap<String,String> cityInfo;
+	public static HashMap<String,String> cityInfo;
+	
 	public WeatherPage(WebDriver driver) {
 		super(driver, "WeatherPage");
 	}
@@ -55,6 +57,7 @@ public class WeatherPage extends GetPage {
 			String temp[]=e.getText().split(":");
 			cityInfo.put(temp[0].trim(), temp[1].trim());
 		}
+		properties.writeHahMaptoDataPropertyFile(cityInfo);
 	}	
 
 	public void verifyCityWeatherInformationIsDisplayedOnMap(String city) {
@@ -62,12 +65,15 @@ public class WeatherPage extends GetPage {
 		String temp[]=getData("cityWeatherKeys").split(",");
 		for(String a:temp)
 			expected.add(a);
+		
 		SoftAssert sa=new SoftAssert();
-		sa.assertEquals(cityInfo.keySet().toString(), expected,"[ASSERT FAILED]: Fields in city weather information is incorrect"
+		sa.assertEquals(cityInfo.keySet().toString(), expected.toString(),"[ASSERT FAILED]: Fields in city weather information is incorrect"
 				+ " Found: "+cityInfo.keySet().toString()+" Expected: "+expected);
 		sa.assertNotNull(cityInfo.get("Temp in Degrees"),"[ASSERT FAILED]: Temperature in degrees value is empty");
 		sa.assertNotNull(cityInfo.get("Temp in Fahrenheit"),"[ASSERT FAILED]: Temperature in fahrenheit value is empty");
 		sa.assertAll();
 		logMessage("[ASSERT PASSED]: Fields in city weather information is correct and temperature is displayed appropriately for city: "+city);
 	}
-	}
+
+	
+}

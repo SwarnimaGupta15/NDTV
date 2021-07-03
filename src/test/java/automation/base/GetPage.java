@@ -28,15 +28,7 @@ public class GetPage extends BaseUI {
 		
 	protected WebElement element(String elementToken) {
 		WebElement elem = null;
-		try {
-
-			elem = wait.waitForElementToBeVisible(webdriver.findElement(getLocator(elementToken)));
-		} catch (NoSuchElementException excp) {
-			fail(logMessage(
-					"[ASSERT FAILED]: Element " + elementToken + " not found on the " + this.pageName + " !!!"));
-		} catch (NullPointerException npe) {
-
-		}
+		elem = wait.waitForElementToBeVisible(webdriver.findElement(getLocator(elementToken)));
 		return elem;
 	}
 	
@@ -50,16 +42,8 @@ public class GetPage extends BaseUI {
 	}
 	
 	protected WebElement elemconstructed_dynamically(String elementToken, String replacement) {
-		WebElement elem = null;
-		try {
-			elem = wait
-					.waitForElementToBeVisible(webdriver.findElement(getLocatorByReplacing(elementToken, replacement)));
-		} catch (NoSuchElementException excp) {
-			fail(logMessage(
-					"[ASSERT FAILED]: Element " + elementToken + " not found on the " + this.pageName + " !!!"));
-		} catch (NullPointerException npe) {
-
-		} 
+		WebElement elem = null;		
+		elem = wait.waitForElementToBeVisible(webdriver.findElement(getLocatorByReplacing(elementToken, replacement)));
 		return elem;
 	}
 	

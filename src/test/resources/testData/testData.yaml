@@ -1,10 +1,14 @@
 base_url:  https://www.ndtv.com
+
 title:
    homePage: Get Latest News
    weatherPage: NDTV Weather
+
 city: Ajmer
 invalidCityName: Mumb
+
 cityWeatherKeys: Condition,Wind,Humidity,Temp in Degrees,Temp in Fahrenheit
+offSetForTemperature: 10
 
 WeatherAPI:
     service_url: http://api.openweathermap.org/data/2.5/weather?q=

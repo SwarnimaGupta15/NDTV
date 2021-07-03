@@ -9,11 +9,6 @@ import java.util.Properties;
 public class ConfigPropertyReader {
 	private static String defaultConfigFile = "Config.properties";
 
-
-	public ConfigPropertyReader() {
-	}
-
-
 	public static String getProperty(String Property)  {
 		File file = new File(defaultConfigFile);       
 		Properties property = new Properties();
